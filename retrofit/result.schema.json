@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evaluator result (the line after RESULT_JSON on stdout)",
+  "type": "object",
+  "required": ["score", "error", "records"],
+  "properties": {
+    "score": {"type": "number", "minimum": 0, "maximum": 1},
+    "error": {"type": ["string", "null"], "description": "null when scored; otherwise why the submission was rejected (score 0, exit code 2)"},
+    "cost": {"type": "number"},
+    "gate": {"enum": ["ok", "over_budget"]},
+    "seconds": {"type": "number"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["seed", "pga", "converged", "score"],
+      "properties": {"seed": {"type": "integer"}, "pga": {"type": "number"}, "converged": {"type": "boolean"},
+        "drift": {}, "acc": {}, "acc_over_pga": {}, "T1": {"type": "number"}, "score": {"type": "number"}}}}
+  }
+}

@@ -1,0 +1,10 @@
+[project]
+name = "seismolab-retrofit"
+version = "0.1.0"
+description = "Seismic retrofit design benchmark for a 3-story RC frame, built on OpenSeesPy"
+requires-python = ">=3.9"
+dependencies = ["openseespy", "matplotlib", "numpy"]
+[project.optional-dependencies]
+dev = ["pytest"]
+[tool.setuptools]
+packages = ["retrofit"]

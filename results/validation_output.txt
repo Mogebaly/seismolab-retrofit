@@ -1,0 +1,7 @@
+[PASS] cantilever_deflection: measured 4.5 expected 4.5 err 0.000%
+[PASS] sdof_period: measured 9.42501 expected 9.42478 err 0.003%
+[PASS] sdof_time_history_vs_rk4: measured 17.9117 expected 17.9196 err 0.044%
+[PASS] gravity_equilibrium: measured 540000 expected 540000 err 0.000%
+[PASS] column, NO hardening (b=0): base moment 52.15 kN m vs plastic couple Mp 53.08 kN m (-1.7%, tolerance +-5%)
+[PASS] column, b=1%: base moment 67.33 kN m (+26.8% vs Mp); hardening raises moment relative to b=0
+[PASS] base reaction vs base-section moment equilibrium err 1.33e-15

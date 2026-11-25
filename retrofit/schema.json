@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Retrofit design submission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["jacket_mm", "brace_mm2"],
+  "properties": {
+    "jacket_mm": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": 0, "maximum": 150}},
+    "brace_mm2": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": 0, "maximum": 4000}}
+  }
+}
